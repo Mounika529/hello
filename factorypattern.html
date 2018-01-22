@@ -1,0 +1,47 @@
+<DOCTYPE html>
+	<html>
+	<head>
+		<title> Factory pattern sample</title>
+		<script type="text/javascript">
+
+
+			function Clerk(options){
+				this.hourRate=options.hourRates || 20;
+				this.firstName=options.firstName || "no firstName";
+				this.lastName =options.lastName  || "no lastName";
+				this.id  =options.id    || "99999";
+			}
+
+
+			  function Manager(options){
+			  	this.hourRate=options.hourRate  ||25;
+			  	this.firstName=options.firstName || "no firstName";
+			  	this.lastName=options.lastName   || "no lastName";7
+			  	this.id =options.id             || "6666666";
+
+			  }
+			   var EmployeeFactory = function  			   	
+			   };
+
+			  EmployeeFactory.prototype.createEmployee=function (options){
+			  	if(options.employeeType=="Clerk")
+			  		EmployeeConstructor = Clerk;
+			  	else
+			  		if(options.employeeType=="Manager")
+			  			EmployeeConstructor = Manager;
+			  		return new EmployeeConstructor(options);
+			  }
+  
+			  var factory = new EmployeeFactory();
+			  var person = factory.createEmployee({
+			  	employeeType: "Manager",
+			  	firstName: "mounika",
+			  	lastName: "Reddy",
+			  	id : 232323223});
+			  documemt.write(person instanceof Manager);
+
+
+			</script>
+		</head>
+	</body>
+	</html>
