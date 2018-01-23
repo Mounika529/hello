@@ -1,0 +1,41 @@
+JAVASCRIPT Hoisting Concepts: 
+
+ Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution.
+
+There are 2 types of Hoisting they are 1)Variable Hoisting 2)Function Hoisting
+
+1)Variable Hoisting: Where it take the memory pointer but not the variable.
+
+Eg: function (){
+
+    console.log(x);
+ 
+    var x=15;
+
+    }
+
+
+2)Function Hoisting: Where you can shift the entire function where ever you want.
+
+Eg: function foo(){
+
+    var x=15;
+    
+    console.log(foo()){
+
+    function foo(){
+
+    return x;
+  
+    }
+   
+    foo();
+  
+    };
+
+
+
+    
+     
+
+ 
