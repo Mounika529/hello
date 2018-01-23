@@ -1,0 +1,47 @@
+Promises In JS : Do something with in the callbacks, promises can take two array(response, Reject)
+
+Response : results (success)
+
+Reject   : error  (failure)
+
+
+
+
+Success Condition :  
+------------------------>
+
+Eg:  function fetchData(query){
+
+     return new promise (function(resolve, reject)){
+
+     db= new DatabaseConnection();
+
+     db.on('results Function(results))
+
+     resolve(results);
+
+     });
+
+
+
+Failure Condition :
+------------------------->
+
+Eg: function fetchData(query){
+
+    return new promise (function( results, reject)){
+
+    db= new DatabaseConnection();
+
+    db.on('result' Function(error))
+
+    reject(error)
+  
+    });
+
+    db.query(query);
+
+    });
+
+
+
