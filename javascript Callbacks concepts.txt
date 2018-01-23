@@ -1,0 +1,19 @@
+ CallBacks In Javascript: 
+
+CallBacks are the function that are passed to another function as a parameter and callback function is called inside the other function.
+
+Eg: function  myfunction(par1, par2,){
+
+    alert(''+ para1+','+para2);
+
+   if(callback && typeof(callback)==function()){
+ 
+   callback();
+
+   }
+
+   }
+
+  myfunction('ham', '', '');
+
+
