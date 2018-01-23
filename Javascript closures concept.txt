@@ -1,0 +1,36 @@
+
+CLOSURES : Closures is a inner function that has access to outer function's variable scope chain. 
+           Closure has 3 scope chains, 1) It has access to its own scope( Variables which are declared with in the curly bracess).
+           2) Access to outer function variable.
+           3) Access to global Variable.
+
+Eg:  Var passed =3;
+ 
+     function f(){
+ 
+     var inner=2;
+
+     return(passed+inner);
+
+     };
+
+     f().
+
+
+---------> Closures is a inner function has Access to its outer function (or) Wrapping one function with other.
+
+Eg:  Function bob(){
+
+     var x=0;
+
+     function foo(){
+
+     console.log(x);
+
+     };
+
+    console.dir(foo);
+
+    };
+
+    bob();
